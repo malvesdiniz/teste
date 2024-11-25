@@ -1,0 +1,68 @@
+pipeline {
+    agent any
+    
+    stages {
+        stage('Hello') {
+            steps {
+                echo "Hello World"
+            }
+        }
+        stage('deel 1') {
+            steps {
+                sh 'pwd'
+            }
+        }
+        stage('deel 2') {
+            steps {
+                script {
+
+                    sh 'mkdir halloween'
+                    sh 'touch halloween/.boo'
+                    sh 'ls -la'
+                }
+            }
+        }
+        stage('deel 3') {
+            steps {
+                script {
+
+                    def studentNumbers = ['12302810', '12203888']  
+                    def firstNames = ['Mariana', 'Satiko']  
+                    def lastNames = ['Diniz','Shapy']  
+                    
+                    studentNumbers.eachWithIndex { studentNumber, index ->
+                        def firstName = firstNames[index]
+                        def lastName = lastNames[index]
+                        
+                        sh "mkdir ${studentNumber}" 
+                        sh "touch ${studentNumber}/${firstName}${lastName}"  
+                    }
+                    
+                    
+                    sh 'zip -r groepsleden.zip 12302810 12203888' 
+                    
+                   
+                    sh 'ls -R'  
+                }
+            }
+        }
+         stage('deel 4') {
+            steps {
+                script {
+                    cleanWs()
+                }
+            }
+        }
+        stage('checkout code') {
+            steps {
+               git branch: 'main', url: 'https://github.com/PXL-2TIN-DevOps-Resources/Calculator-app'
+            }    
+        }
+         stage('Success') {
+            steps {
+                echo 'winner!'
+            }
+        }
+         
+    }
+}
