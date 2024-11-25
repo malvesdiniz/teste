@@ -1,16 +1,20 @@
 Oplossing voor DevOps Opdracht 2
 
-Punt (a)
+## Punt (a)
 Bewijs van een werkende pipeline voor deel 2
 
-![Screenshot van deel 2](screenshot-deel-2.png)
+![Screenshot van deel 2](img/screenshot-deel-2.png)
 
 ## Punt (b)
-**Bewijs van een werkende pipeline voor deel 3**
+Bewijs van een werkende pipeline voor deel 3
 
-![Screenshot van deel 3](screenshot-deel-3.png)
+![Screenshot van deel 3](img/screenshot-deel-3-1.png)
+![Screenshot van deel 3](img/screenshot-deel-3-2.png)
+![Screenshot van deel 3](img/screenshot-deel-3-3.png)
 
 ## Punt (c)
-**Bewijs van een werkende pipeline voor het ophalen van de code**
+Bewijs van een werkende pipeline voor het ophalen van de code
 
-![Screenshot van deel 4](screenshot-deel-4.png)nano oplossing.md
+![Screenshot van deel 4](img/screenshot-deel-4-1.png)
+![Screenshot van deel 4](img/screenshot-deel-4-2.png)
+![Screenshot van deel 4](img/screenshot-deel-4-3.png)
